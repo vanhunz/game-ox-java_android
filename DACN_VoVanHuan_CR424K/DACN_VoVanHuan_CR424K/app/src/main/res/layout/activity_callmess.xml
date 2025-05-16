@@ -1,0 +1,122 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:padding="16dp">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:paddingBottom="16dp">
+
+        <!-- Contact Information -->
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:paddingBottom="16dp">
+
+            <TextView
+                android:id="@+id/name1"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="QUEN MK GUI "
+                android:gravity="center"
+                android:foregroundGravity="center"
+                android:layout_gravity="center"
+                android:textSize="32sp"
+                android:textColor="@android:color/black"
+                android:layout_marginBottom="4dp" />
+
+            <TextView
+                android:id="@+id/phone1"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:gravity="center"
+                android:layout_gravity="center"
+                android:text="0123456789"
+                android:textSize="28sp"
+                android:textColor="@android:color/darker_gray"
+                android:layout_marginBottom="8dp" />
+
+            <!-- Action Buttons -->
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:layout_gravity="center"
+                android:gravity="center"
+                android:foregroundGravity="center"
+                android:paddingTop="8dp">
+
+                <ImageButton
+                    android:id="@+id/callBtn1"
+                    android:layout_width="48dp"
+                    android:layout_height="48dp"
+                    android:src="@drawable/call"
+                    android:contentDescription="Call"
+                    android:background="@android:color/transparent"
+                    android:layout_marginEnd="8dp" />
+
+                <ImageButton
+                    android:id="@+id/smsBtn1"
+                    android:layout_width="48dp"
+                    android:layout_height="48dp"
+                    android:src="@drawable/sms"
+                    android:contentDescription="Send SMS"
+                    android:background="@android:color/transparent"
+                    android:layout_marginEnd="8dp" />
+
+                <ImageButton
+                    android:id="@+id/noteBtn1"
+                    android:layout_width="48dp"
+                    android:layout_height="48dp"
+                    android:src="@drawable/thongtin"
+                    android:contentDescription="Notes"
+                    android:background="@android:color/transparent" />
+
+            </LinearLayout>
+
+        </LinearLayout>
+
+        <!-- Open Browser Button -->
+
+        <ImageView
+            android:id="@+id/imageView"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:layout_gravity="center"
+            android:foregroundGravity="center"
+            app:srcCompat="@drawable/img_6" />
+
+        <Button
+            android:id="@+id/btn_url"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="video hướng dẫn"
+            android:textSize="16sp"
+            android:layout_marginTop="16dp"
+            android:backgroundTint="@android:color/holo_blue_light"
+            android:textColor="@android:color/white" />
+
+        <Button
+            android:id="@+id/btn_back1"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="QUAY LẠI"
+            android:textSize="16sp"
+            android:layout_marginTop="16dp"
+            android:backgroundTint="@android:color/holo_blue_light" />
+        <Button
+            android:id="@+id/btn_momedia"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Mở Media"
+            android:layout_marginTop="16dp" />
+    </LinearLayout>
+
+
+</ScrollView>

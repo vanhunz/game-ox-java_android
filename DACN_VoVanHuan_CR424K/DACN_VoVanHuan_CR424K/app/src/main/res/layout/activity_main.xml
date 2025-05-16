@@ -1,0 +1,238 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#FFFEFE"
+    android:gravity="center"
+    android:orientation="vertical"
+    android:padding="16dp">
+
+    <!-- RadioGroup chọn người chơi X hoặc O -->
+    <RadioGroup
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="16dp"
+        android:orientation="horizontal">
+
+        <RadioButton
+            android:id="@+id/radioX"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:onClick="onPlayerRadioButtonClicked"
+            android:text="X"
+            android:textSize="16sp" />
+
+        <RadioButton
+            android:id="@+id/radioO"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:onClick="onPlayerRadioButtonClicked"
+            android:text="O"
+            android:textSize="16sp" />
+
+    </RadioGroup>
+
+    <!-- TextView hiển thị trạng thái -->
+    <TextView
+        android:id="@+id/status"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="24dp"
+        android:text="Thằng X đánh"
+        android:textColor="@android:color/black"
+        android:textSize="18sp"
+        android:textStyle="bold" />
+
+    <!-- RadioGroup bật/tắt nhạc -->
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:layout_marginBottom="16dp"
+        android:gravity="center">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Nhạc: "
+            android:textSize="16sp"
+            android:layout_marginEnd="8dp"
+            android:textStyle="bold" />
+
+        <RadioGroup
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+
+            <RadioButton
+                android:id="@+id/musicOn"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:onClick="onMusicRadioButtonClicked"
+                android:text="Bật"
+                android:textSize="16sp" />
+
+            <RadioButton
+                android:id="@+id/musicOff"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:onClick="onMusicRadioButtonClicked"
+                android:text="Tắt"
+                android:textSize="16sp" />
+        </RadioGroup>
+    </LinearLayout>
+
+    <!-- Bảng Tic-Tac-Toe -->
+    <GridLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="24dp"
+        android:columnCount="3"
+        android:rowCount="3">
+
+        <!-- Các Button với màu trắng -->
+        <Button
+            android:id="@+id/button1"
+            android:layout_width="100dp"
+            android:layout_height="100dp"
+            android:layout_margin="2dp"
+            android:background="@android:color/white"
+            android:onClick="buttonClick"
+            android:tag="0,0"
+            android:text=""
+            android:textSize="24sp"
+            android:textStyle="bold" />
+
+        <Button
+            android:id="@+id/button2"
+            android:layout_width="100dp"
+            android:layout_height="100dp"
+            android:layout_margin="2dp"
+            android:background="@android:color/white"
+            android:onClick="buttonClick"
+            android:tag="0,1"
+            android:text=""
+            android:textSize="24sp"
+            android:textStyle="bold" />
+
+        <Button
+            android:id="@+id/button3"
+            android:layout_width="100dp"
+            android:layout_height="100dp"
+            android:layout_margin="2dp"
+            android:background="@android:color/white"
+            android:onClick="buttonClick"
+            android:tag="0,2"
+            android:text=""
+            android:textSize="24sp"
+            android:textStyle="bold" />
+
+        <Button
+            android:id="@+id/button4"
+            android:layout_width="100dp"
+            android:layout_height="100dp"
+            android:layout_margin="2dp"
+            android:background="@android:color/white"
+            android:onClick="buttonClick"
+            android:tag="1,0"
+            android:text=""
+            android:textSize="24sp"
+            android:textStyle="bold" />
+
+        <Button
+            android:id="@+id/button5"
+            android:layout_width="100dp"
+            android:layout_height="100dp"
+            android:layout_margin="2dp"
+            android:background="@android:color/white"
+            android:onClick="buttonClick"
+            android:tag="1,1"
+            android:text=""
+            android:textSize="24sp"
+            android:textStyle="bold" />
+
+        <Button
+            android:id="@+id/button6"
+            android:layout_width="100dp"
+            android:layout_height="100dp"
+            android:layout_margin="2dp"
+            android:background="@android:color/white"
+            android:onClick="buttonClick"
+            android:tag="1,2"
+            android:text=""
+            android:textSize="24sp"
+            android:textStyle="bold" />
+
+        <Button
+            android:id="@+id/button7"
+            android:layout_width="100dp"
+            android:layout_height="100dp"
+            android:layout_margin="2dp"
+            android:background="@android:color/white"
+            android:onClick="buttonClick"
+            android:tag="2,0"
+            android:text=""
+            android:textSize="24sp"
+            android:textStyle="bold" />
+
+        <Button
+            android:id="@+id/button8"
+            android:layout_width="100dp"
+            android:layout_height="100dp"
+            android:layout_margin="2dp"
+            android:background="@android:color/white"
+            android:onClick="buttonClick"
+            android:tag="2,1"
+            android:text=""
+            android:textSize="24sp"
+            android:textStyle="bold" />
+
+        <Button
+            android:id="@+id/button9"
+            android:layout_width="100dp"
+            android:layout_height="100dp"
+            android:layout_margin="2dp"
+            android:background="@android:color/white"
+            android:onClick="buttonClick"
+            android:tag="2,2"
+            android:text=""
+            android:textSize="24sp"
+            android:textStyle="bold" />
+    </GridLayout>
+
+    <!-- Hàng ngang chứa nút Làm mới và Lịch sử -->
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:gravity="center"
+        android:layout_marginBottom="16dp">
+
+        <!-- Nút làm mới -->
+        <Button
+            android:id="@+id/resetButton"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginEnd="16dp"
+            android:onClick="resetGame"
+            android:text="Làm mới"
+            android:textSize="16sp" />
+
+        <!-- Nút lịch sử thắng thua -->
+        <Button
+            android:id="@+id/historyButton"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:onClick="showHistory"
+            android:text="Lịch sử thắng thua"
+            android:textSize="16sp" />
+    </LinearLayout>
+
+    <!-- Nút đăng xuất -->
+    <Button
+        android:id="@+id/logoutButton"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Đăng xuất"
+        android:onClick="logout" />
+</LinearLayout>

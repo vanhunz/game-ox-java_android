@@ -1,0 +1,79 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:padding="16dp"
+    android:background="#F5F5F5">
+
+    <!-- Logo hoặc biểu tượng ứng dụng -->
+    <ImageView
+        android:id="@+id/logo"
+        android:layout_width="120dp"
+        android:layout_height="120dp"
+        android:src="@drawable/img_4"
+        android:layout_gravity="center"
+        android:contentDescription="Logo ứng dụng"
+        android:layout_marginBottom="24dp" />
+
+    <!-- Tài khoản -->
+
+    <!-- Mật khẩu -->
+    <EditText
+        android:id="@+id/tk"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="16dp"
+        android:background="@drawable/rounded_edittext"
+        android:backgroundTint="#C6E6C2"
+        android:drawablePadding="8dp"
+        android:hint="Tài khoản"
+        android:inputType="text"
+        android:padding="12dp" />
+
+    <EditText
+        android:id="@+id/mk"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Mật khẩu"
+        android:inputType="textPassword"
+        android:backgroundTint="#C6E6C2"
+        android:drawablePadding="8dp"
+        android:padding="12dp"
+        android:layout_marginBottom="16dp"
+        android:background="@drawable/rounded_edittext" />
+
+    <!-- Ghi nhớ đăng nhập -->
+    <CheckBox
+        android:id="@+id/luutk"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Ghi nhớ đăng nhập"
+        android:textColor="#333333"
+        android:layout_marginBottom="24dp" />
+
+    <!-- Nút đăng nhập -->
+    <Button
+        android:id="@+id/dangnhap"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Đăng nhập"
+        android:textColor="#FFFFFF"
+        android:backgroundTint="#6200EE"
+        android:padding="12dp"
+        android:layout_marginBottom="16dp"
+        android:background="@drawable/rounded_button" />
+
+    <Button
+        android:id="@+id/btn_quenmk"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="QUÊN MẬT KHẨU"
+        android:textColor="#FFFFFF"
+        android:backgroundTint="#6200EE"
+        android:padding="12dp"
+        android:layout_marginBottom="16dp"
+        android:background="@drawable/rounded_button"/>
+
+</LinearLayout>

@@ -1,0 +1,56 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    package="com.example.dacn_vovanhuan_cr424k">
+
+    <application
+        android:allowBackup="true"
+        android:dataExtractionRules="@xml/data_extraction_rules"
+        android:fullBackupContent="@xml/backup_rules"
+        android:icon="@drawable/img_3"
+        android:label="@string/app_name"
+        android:roundIcon="@drawable/img_3"
+        android:supportsRtl="true"
+        android:theme="@style/Theme.DACN_VoVanHuan_CR424K"
+        tools:targetApi="31">
+        <activity
+            android:name=".MediaActivity"
+            android:exported="false" />
+        <activity
+            android:name=".CALLMESS"
+            android:exported="true"
+            android:theme="@style/Theme.DACN_VoVanHuan_CR424K" /> <!-- Login Activity -->
+        <activity
+            android:name=".LoginActivity"
+            android:exported="true"
+            android:theme="@style/Theme.DACN_VoVanHuan_CR424K">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name=".MainActivity"
+            android:exported="true"
+            android:theme="@style/Theme.DACN_VoVanHuan_CR424K" />
+        <activity
+            android:name=".WinActivity"
+            android:exported="true"
+            android:theme="@style/Theme.DACN_VoVanHuan_CR424K" />
+        <activity
+            android:name=".HelpActivity"
+            android:exported="false"
+            android:theme="@style/Theme.DACN_VoVanHuan_CR424K" />
+        <activity
+            android:name=".HistoryActivity"
+            android:exported="false"
+            android:theme="@style/Theme.DACN_VoVanHuan_CR424K" />
+
+        <service
+            android:name=".MusicService"
+            android:enabled="true"
+            android:exported="false" />
+    </application>
+
+</manifest>
